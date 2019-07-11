@@ -2,6 +2,8 @@
 This project is developed to automate the process of detecting outliers in agricultural data. The data has been collected from AgMarknet site. It's an enormous dataset spread across 7 years. Each year dataset contains 12 columns and approximately 30 lakh rows. Therefore, the code has been time and space optimised. Code has been written in Jupyter notebook.
 
 # Code 1:
+The data is filtered using loops and lists; we filter using Commodity type and Market Centre. We define a band for normal data points using Coefficient of Variation and the difference between the modal price of each data point from the moving average.
+If the difference between the modal price and its corresponding moving average is greater than the coefficient of variation then the data point is marked an outlier.
 
 # Code 2:
 
