@@ -1,5 +1,5 @@
-# Outlier-detection-
-This project is developed to automate the process of detecting outliers in agricultural data. The data has been collected from AgMarknet site. It's an enormous dataset spread across 7 years. Each year dataset contains 12 columns and approximately 30 lakh rows. Therefore, the code has been time and space optimised. Code has been written in Jupyter notebook.
+# Methods for Outlier-detection
+This project is developed to detect outliers to identify price and quantity shocks in agriculture markets. The data has been collected from [AgMarknet website](https://agmarknet.gov.in/Default.aspx). We used a large dataset spread across 7 years, where each year dataset contains 12 features and approximately 3 million rows. Therefore, the code has been time and space optimised to run under 3min on 4 GB RAM. The scripts were written in Jupyter notebook.
 
 # Code 1:
 The data is filtered using loops and lists; we filter using Commodity type and Market Centre. We define a band for normal data points using Coefficient of Variation and the difference between the modal price of each data point from the moving average.
