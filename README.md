@@ -11,7 +11,7 @@ Once again, the data is filtered using loops and lists; we filter using Commodit
 Lower Band: Mean - (Standard Deviation) * K
 
 Upper Band: Mean + (Standard Deviation) * K
-Where K = 1, 2 or 3
+, Where K = 1, 2 or 3
 
 If the difference lies outside the range where k=1 then flag1 is marked 1 to represent an outlier. Otherwise, flag1 is marked 0 to represent a normal data point. Similarly, we calculate flag2 and flag3.
 
@@ -24,3 +24,8 @@ Methodology (The general formula):
 Mean of Modal Prices - (K * Standard Deviation of Modal Prices) < Modal Price < Mean of Modal Prices + (K * Standard Deviation of Modal Prices). 
 
 We have processed the data for flags for K= 1, 2, …, 6. The range defined as such represents all data points within K standard deviations. Any data points that lie outside this range are ‘flagged’; where 1 represents an outlier and 0 represents a normal data point.
+
+The results of the confusion matrix for all flags along with the calculated accuracy, precision, recall and F1 Score is shown in the image.
+
+![Screenshot 2021-11-06 at 1 56 34 PM](https://user-images.githubusercontent.com/39693183/140603301-5e541196-e084-4f74-b0f1-e704eb22e45d.png)
+Note: f1, f2, ...,f6 represent flag1, flag2,..., flag 6
